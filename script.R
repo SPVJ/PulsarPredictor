@@ -82,6 +82,8 @@ model %>%
 #add compiler to the model, binary crossentropy for binary classification
 #adam optimizer and accuracy as a metrics
 
+#------------------------ Model Training, Prediction and Conclusion ---------------------
+
 history <- model %>%
   fit(pulsar_train,train_label,epoch = 50, batch_size = 128, validation_split = 0.2)
 
